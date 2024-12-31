@@ -1,4 +1,3 @@
-
 * {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -51,28 +50,4 @@ body {
     height: 7px;
     line-height: 3;
     font-size: larger;
-}
-
-.keypad-btns {
-    display: grid;
-    grid: repeat(5, 70px) / repeat(4, 70px);
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-}
-
-.keypad-btns button {
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: #131313;
-    color: white;
-    font-size: x-large;
-}
-
-.keypad-btns .fun_btn {
-    color: #ff8800;
-}
-
-.num_btn:hover,.fun_btn:hover {
-    background-color: rgba(29, 29, 29, 0.979);
 }
