@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: coral;
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background-color: #131313;
+    background-color: black;
     max-width: 300px;
     height: auto;
     display: flex;
@@ -35,10 +35,10 @@ body {
 }
 
 #Display-area .currentInput {
-    /* display: flex; */
+    
     text-align: right;
     height: 8vh;
-    color: white;
+    color: brown;
     font-size: xx-large;
     line-height: 2;
     word-wrap: break-word;
@@ -46,8 +46,39 @@ body {
 
 #Display-area .answerScreen {
     text-align: right;
-    color: rgba(150, 150, 150, 0.87);
+    color: blue;
     height: 7px;
     line-height: 3;
     font-size: larger;
+}
+
+.keypad-btns {
+    display: grid;
+    grid: repeat(5, 70px) / repeat(4, 70px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.keypad-btns button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+   background-color: bisque;
+    color: black;
+    font-size: xx-large;
+}
+
+.keypad-btns .fun_btn {
+    color: #ff8800;
+}
+
+.num_btn:hover,.fun_btn:hover {
+    background-color: rgba(29, 29, 29, 0.979);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #131313;
+        align-items: flex-start;
+    }
 }
